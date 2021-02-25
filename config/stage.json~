@@ -1,0 +1,55 @@
+{
+  "app": {
+    "frontendUrl": "http://54.190.192.105:6089/",
+    "logoUrl": "",
+    "name": "Application",
+    "host": "http:/54.190.192.105:6090",
+    "swaggerURL": "http://54.190.192.105:6090",
+    "swaggerPort": "54.190.192.105:6090",
+    "port": 6090,
+    "socket": 6090,
+    "debug": true,
+    "logLevel": "debug",
+    "jwtAlgo": "HS512",
+    "jwtKey": "juthor-project",
+    "STRIPE_PRIVATE_KEY": "",
+    "encryptedKey":"55a51621a6648525"
+  },
+  "db": {
+    "name": "juthor",
+    "host": "54.71.18.74",
+    "auth": false,
+    "username": "juthor",
+    "password": "juthor",
+    "port": 27017,
+    "mongoose": {
+      "useMongoClient": true,
+      "autoIndex": true, // Don't build indexes
+      "poolSize": 10, // Maintain up to 10 socket connections
+      // If not connected, return errors immediately rather than waiting for reconnect
+      "bufferMaxEntries": 0
+    }
+  },
+  "ios": {
+    "cert": "",
+    "key": "",
+    "gateway": "gateway.sandbox.push.apple.com",
+    "production": true
+  },
+  "android": {
+    "senderId": "",
+    "apiKey": ""
+  },
+  "twillio": {
+    "sid": "",
+    "token": "",
+    "number": ""
+  },
+  "smtp": {
+    "smtpUser": "romykundal5252@gmail.com",
+    "smtpPass": "romykundal@5252",
+    "smtpPort": 587, //25,
+    "smtpServer": "smtp.gmail.com",
+    "mailFrom": "Application <notifications@mean.com>"
+  }
+}

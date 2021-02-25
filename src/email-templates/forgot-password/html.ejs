@@ -1,0 +1,102 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+
+    <style>
+        body {
+
+            background-color: #FFFFFF;
+            padding: 0;
+            margin: 0;
+        }
+
+        @media (max-width: 575px) {
+            body {
+                font-size: 14px !important;
+                line-height: 28px !important;
+            }
+
+            .theme-btn {
+                font-size: 14px !important;
+                letter-spacing: 0 !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #EEEEEE; padding: 0; margin: 0;font-size: 24px;color: #000000;line-height: 34px;">
+
+    <table border="0" cellpadding="0" cellspacing="10" height="100%" bgcolor="#FFFFFF" width="100%"
+        style="max-width: 650px; margin: auto; padding:0px 40px" id="bodyTable">
+
+        <tr>
+
+            <td align="center" valign="top">
+
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailContainer"
+                    style="font-family:Arial; color: #333333;">
+
+                    <!-- Logo -->
+
+                    <tr>
+
+                        <td align="left" valign="top" colspan="2" style="padding-bottom: 10px;">
+                        
+
+                        </td>
+
+                    </tr>
+
+                    <!-- Title -->
+                    <tr>
+
+                        <td align="left" valign="top" colspan="2" style=" padding: 20px 0 10px 0;">
+
+                            <span>Hi <%= name %>,</span>
+
+                        </td>
+
+                    </tr>
+
+                    <!-- Messages -->
+
+                    <tr>
+
+                      <td align="left" valign="top" colspan="2" style="padding-top: 10px;">
+                        <p>Your new password has been created succussfully,</p>
+                    </td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                          <p> Email id: <%= email %></p>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <p> Password: <%= password %></p>
+                    </td>                    
+                </tr>
+                    <tr>
+                        <td>
+                            <p>Thanks,<br /> Project Achieve Team</p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
+</body>
+
+</html>

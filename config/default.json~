@@ -1,0 +1,55 @@
+{
+  "app": {
+    "frontendUrl": "http://localhost:4200/",
+    "logoUrl": "",
+    "name": "Application",
+    "host": "http:/localhost:6090",
+    "swaggerURL": "http://localhost:6090",
+    "swaggerPort": "localhost:6090",
+    "port": 6090,
+    "socket": 6090,
+    "debug": true,
+    "logLevel": "debug",
+    "jwtAlgo": "HS512",
+    "jwtKey": "project",
+    "STRIPE_PRIVATE_KEY": "",
+    "encryptedKey":"55a51621a6648525"
+  },
+  "db": {
+    "name": "db_nodejs",
+    "host": "localhost",
+    "auth": false,
+    "username": "db_nodejs",
+    "password": "db_nodejs",
+    "port": 27017,
+    "mongoose": {
+      "useMongoClient": true,
+      "autoIndex": true, // Don't build indexes
+      "poolSize": 10, // Maintain up to 10 socket connections
+      // If not connected, return errors immediately rather than waiting for reconnect
+      "bufferMaxEntries": 0
+    }
+  },
+  "ios": {
+    "cert": "",
+    "key": "",
+    "gateway": "gateway.sandbox.push.apple.com",
+    "production": true
+  },
+  "android": {
+    "senderId": "",
+    "apiKey": ""
+  },
+  "twillio": {
+    "sid": "",
+    "token": "",
+    "number": ""
+  },
+  "smtp": {
+    "smtpUser": "",
+    "smtpPass": "",
+    "smtpPort": 587, //25,
+    "smtpServer": "smtp.gmail.com",
+    "mailFrom": "Application <notifications@mean.com>"
+  }
+}
